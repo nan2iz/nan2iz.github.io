@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contact Me</title>
+    <title>CONTACT - NANWARIN</title>
     
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +10,54 @@
     <meta name="author" content="Nanwarin Chantarutai">
     <meta name="referrer" content="origin" />
     
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    
+    <!--Imported Material Lite-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    
+    <link rel="shortcut icon" href="imgs/cat_icon.png">
+    
 </head>
 
 <body>
     
-    <form method="POST" action="http://formspree.io/nan2iz.ch@gmail.com">
-      <input type="email" name="email" placeholder="Your email">
-      <textarea name="message" placeholder="Your message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="nanwarin-header mdl-layout__header mdl-layout__header--waterfall">
+    
+                <div class="mdl-layout__header-row">
+            
+                    <span class="mdl-layout-title">Nanwarin Chantarutai</span>
+                    
+                    <div class="mdl-layout-spacer"></div>
+                    
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="index.html">About-Nanwarin</a>
+                    <a class="mdl-navigation__link" href="">Coding-Shearing</a>
+                    <a class="mdl-navigation__link" href="">Student-Aboard-Life</a>
+                    <a class="mdl-navigation__link" href="">Beauty-Product-Review</a> 
+                    <a class="mdl-navigation__link" href="contact_me.html">Contact-Nanwarin</a> 
+                    </nav>
+                    
+            
+                </div>
+    
+         </header>
+        
+        <main class="mdl-layout__content">
+            <form method="POST" action="http://formspree.io/nan2iz.ch@gmail.com">
+              <h5>Please fill your information</h5>
+              <input type="email" name="email" placeholder="Your email"><br>
+              <textarea name="message" placeholder="Your message"></textarea><br>
+              <button type="submit" class="mdl-button mdl-js-button mdl-button--accent">Send</button>
+
+
+            </form>
+        </main>
+    </div>
     
 </body>
 
