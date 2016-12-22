@@ -11,12 +11,10 @@
     <meta name="referrer" content="origin" />
     
     <link href="css/main.css" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <link href="vendor/mdl/material.css" rel = "stylesheet">
     
-    <!--Imported Material Lite-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="vendor/mdl/material.js"></script>
     
     <link rel="shortcut icon" href="imgs/cat_icon.png">
     
@@ -48,14 +46,44 @@
          </header>
         
         <main class="mdl-layout__content">
-            <form method="POST" action="http://formspree.io/nan2iz.ch@gmail.com">
-              <h5>Please fill your information</h5>
-              <input type="email" name="email" placeholder="Your email"><br>
-              <textarea name="message" placeholder="Your message"></textarea><br>
-              <button type="submit" class="mdl-button mdl-js-button mdl-button--accent">Send</button>
+        
+            <div class = "mdl-grid">
+            
+            <div class = "mdl-cell mdl-cell--2-col"></div>
+            <div class = "mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp">
+                
+                <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Contact Nanwarin</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <form method="POST" action="http://formspree.io/nan2iz.ch@gmail.com">
 
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                                <label class="mdl-textfield__label" for="Name">Name...</label>
+                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="Email" name="email">
+                                <label class="mdl-textfield__label" for="Email">Email...</label>
+                        </div>
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea name="message" class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
+                                <label class="mdl-textfield__label" for="note">Enter note</label>
+                        </div>
+                        <p>
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+                                    Submit
+                                </button>
+                        </p>
 
-            </form>
+                    </form>
+                
+                </div>
+            </div>    
+            <div class = "mdl-cell mdl-cell--2-col"></div>
+            </div>
+            
         </main>
     </div>
     

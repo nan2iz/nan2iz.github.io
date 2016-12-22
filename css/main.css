@@ -28,11 +28,10 @@ header.nanwarin-header{
 }
 
 .nanwarin-header a.mdl-navigation__link:hover{
-    color: blue;
+    color: #FE3780;
 }
 
 img.article-image{
     height: 200px;
     width: 200px;
-    align-items: center;
 }
