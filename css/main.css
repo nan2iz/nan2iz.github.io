@@ -35,3 +35,7 @@ img.article-image{
     height: 200px;
     width: 200px;
 }
+
+.blog-card-study-bg {
+  background: url(head01.png) center / cover;
+}
