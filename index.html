@@ -11,8 +11,12 @@
         
         <meta charset = "utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        
-        <link rel="stylesheet" href="assets/css/main.css" />
+    
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    
         <link rel="shortcut icon" href="images/cat_icon.png">
     
         <script src="assets/js/jquery.min.js"></script>
@@ -116,7 +120,6 @@
 								<span class="image featured"><img src="images/yosemite.jpg" alt="" /></span>
                             -->
               
-                    <section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
@@ -131,7 +134,7 @@
 									</div>
 									<span class="image"><img src="images/nanwarin_01.jpeg" alt="" /></span>
 								</div>
-							</section>     
+				  
                 
                           
 						
@@ -142,7 +145,7 @@
 				            </footer>
                             
                             
-							</article>
+				 </article>
 
 					</div>
 
@@ -161,19 +164,7 @@
 
 			</div>
     
- <script>
-    var dialog = document.querySelector('dialog');
-    var showDialogButton = document.querySelector('#show-dialog');
-    if (! dialog.showModal) {
-      dialogPolyfill.registerDialog(dialog);
-    }
-    showDialogButton.addEventListener('click', function() {
-      dialog.showModal();
-    });
-    dialog.querySelector('.close').addEventListener('click', function() {
-      dialog.close();
-    });
-  </script>
+
     
 </body>
     
