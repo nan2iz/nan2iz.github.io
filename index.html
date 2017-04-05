@@ -35,8 +35,9 @@
                         
 						<nav class="links">
 							<ul>
-								<li><a href="#">About Nanwarin</a></li>
                                 <!-- 
+								<li><a href="#">About Nanwarin</a></li>
+                                
 								<li><a href="#">Study Aboard Life</a></li>
 								<li><a href="#">Coding Sharing</a></li>
 								<li><a href="#">Normal Life</a></li>
@@ -102,24 +103,45 @@
 						<article class="post">
 								<header>
 									<div class="title">
-										<h2><a href="#">CS 570 - Homework 1</a></h2>
+										<h2>CS 570 - Homework 1</h2>
 										<p>Human Computer Interaction, Homework 1</p>
 									</div>
 									<div class="meta">
 										<time class="published" datetime="2015-11-01">April, 2017</time>
-										<a href="#" class="author"><span class="name">Nanwarin C</span><img src="images/nanwarin_01.jpeg" alt="" /></a>
+										<span class="name">Nanwarin C</span>
 									</div>
 								</header>
+                            
                             <!-- 
 								<span class="image featured"><img src="images/yosemite.jpg" alt="" /></span>
                             -->
-								<p><a href="Nanwarin_Resume.pdf">My resume</a></p>
-								<p><a href="#">Best User Interface</a></p>
-                                <p><a href="#">Worst User Interface</a></p>
-								<footer>
-									Thank you
+              
+                    <section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h3>Nanwarin Chantarutai</h3>
+										</header>
+										<p>Hello !! My name is Nanwarin Chantarutai. I'm second year grad student. </p>
+										<ul class="actions">
+											<li><a href="Nanwarin_Resume.pdf" class="button">Resume</a></li>
+                                            <li><a href="Best_UI.pdf" class="button">Best UI</a></li>
+                                            <li><a href="Worst_UI.pdf" class="button">Worst UI</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/nanwarin_01.jpeg" alt="" /></span>
+								</div>
+							</section>     
+                
+                          
+						
+                           
+                            
+                            <footer>
 									
-								</footer>
+				            </footer>
+                            
+                            
 							</article>
 
 					</div>
@@ -139,6 +161,19 @@
 
 			</div>
     
+ <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
     
 </body>
     
