@@ -55,6 +55,25 @@
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 	}
+	
+	
+  .ico {
+        display:block;
+        height:30px;
+        text-decoration:none;
+        padding-left:20px;
+        padding-right: 20px;
+  }
+  .ico:before{
+    display: inline-block;
+      content: '';
+      background:url('../../images/nanLogo.PNG');
+      background-size:cover;
+          position:absolute;
+      width:35px;
+      height:35px;
+    
+  }
 
 /* Grid */
 
