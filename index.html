@@ -1,178 +1,194 @@
-<!DOCTYPE HTML>
-
-<!--
-	Template From HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-        <title>Nanwarin</title>
-        
-        <meta charset = "utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <title>Nanwarin Chantarutai</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans|Pacifico:300,400,600,700,800'>
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
     
-        <link rel="shortcut icon" href="images/cat_icon.png">
-    
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>	
-        <script src="assets/js/main.js"></script>
-    
-        
-    
+  <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
+<body>
+  
+<!-- Dashboard (Parent Block)-->
+<div class="dashboard">
+  <!-- Dashboard Sidebar (Block)-->
+  <div class="dashboard-sidebar">
+    <!-- Brand (Element)-->
+    <div class="dashboard-sidebar__brand">Nanwarin</div>
+    <!-- Dashboard Nav (Block)-->
+    <div class="dashboard-nav">
+      <ul>
+        <!-- Item (Element)-->
+        <li class="dashboard-nav__item"><a href="about"><i class="fa fa-user-circle fa-fw" aria-hidden="true"></i>About Me</a></li>
+        <!-- Item:Selected (Element:Modifier)        -->
+        <li class="dashboard-nav__item dashboard-nav__item--selected"><a href="projects"><i class="fa fa-list-alt" aria-hidden="true"></i>Projects</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- Dashboard Content (Block)-->
+  <div class="dashboard-content">
+    <!-- Dashboard Content Panel (Element)-->
+    <div class="dashboard-content__panel" data-panel-id="about">
+      <h2>About Me</h2>
+      <p></p>
+    </div>
+    <!-- Dashboard Content Panel (Element)-->
+    <div class="dashboard-content__panel dashboard-content__panel--active" data-panel-id="projects">
+      <!-- Dashboard List (Block) -->
+      <div class="dashboard-list">
+        <!-- Dasboard List Item (Element)-->
+        <div class="dashboard-list__item dashboard-list__item--active" data-item-id="fake_news_project">
+          <!-- Title (Element)-->
+          <h2>Fake News Detection</h2>
+          <!-- Date (Element)--><span>April - May 2017</span>
+        </div>
+        <!-- Dasboard List Item (Element)-->
+        <div class="dashboard-list__item" data-item-id="native_forms_project">
+          <!-- Title (Element)-->
+          <h2>Native Forms</h2>
+          <!-- Date (Element)--><span>April - May 2017</span>
+        </div>
+          
+        <div class="dashboard-list__item" data-item-id="bronco_planner_project">
+          <!-- Title (Element)-->
+          <h2>Bronco Planner</h2>
+          <!-- Date (Element)--><span>15 May - 23 May 2016</span>
+        </div>  
+          
+        <div class="dashboard-list__item" data-item-id="bromo">
+          <!-- Title (Element)-->
+          <h2>Q-Bot IO</h2>
+          <!-- Date (Element)--><span>15 May - 23 May 2016</span>
+        </div>
+          
+        <div class="dashboard-list__item" data-item-id="bromo">
+          <!-- Title (Element)-->
+          <h2>Housing Cost Calculator</h2>
+          <!-- Date (Element)--><span>15 May - 23 May 2016</span>
+        </div>
+          
+      </div>
+    </div>
     
-<body class="single">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-                        <!-- 
-						<span class="ico"></span> 
-                        -->
-                        <h1><a href="#">Nanwarin</a></h1>
-                        
-						<nav class="links">
-							<ul>
-                                <!-- 
-								<li><a href="#">About Nanwarin</a></li>
-                                
-								<li><a href="#">Study Aboard Life</a></li>
-								<li><a href="#">Coding Sharing</a></li>
-								<li><a href="#">Normal Life</a></li>
-								<li><a href="#">Contact Me</a></li>
-                                -->
-							</ul>
-						</nav>
-                        
-                        <!--
-						<nav class="main">
-							<ul>
-								<li class="menu">
-									<a class="fa-bars" href="#menu">Menu</a>
-								</li>
-							</ul>
-						</nav>
-                        -->
-					</header>
-
-				<!-- Menu -->
+  </div>
+  <!-- Dashboard Preview (Block)  -->
+  <div class="dashboard-preview">
+    <!-- Panel (Element)-->
+    <div class="dashboard-preview__panel dashboard-preview__panel--active" data-panel-id="fake_news_project">
+      <!-- Header (Element)-->
+      <div class="dashboard-preview__header">
+        <h3>Fake News Detection</h3>
+      </div>
+      <!-- Content (Element)-->
+      <div class="dashboard-preview__content">
+        <section>
+             <h2>Details</h2>
+             <br>
+              <p>
+                  Group project with 5 grad students for Machine Learning class. Developed a feature extraction function for preprocessing process in order to create a better training dataset
+              </p>
+        </section>
+        <section>
+          <h2>Team Role</h2>
+            <br>
+            <p>
+                Created feature-extraction with 
+            </p>
+        </section>
+        <section>
+            <div class="imgslide">
+                <div id="photos">
+                    <img src="http://arielbeninca.com/Storage/forest3.jpg" >
+                    <img src="http://arielbeninca.com/Storage/forest2.jpg" >
+                    <img src="http://arielbeninca.com/Storage/forest4.jpg" >
+                    <img src="http://arielbeninca.com/Storage/forest1.jpg" >
+                </div>
+                <span id="prev"></span>
+                <span id="next"></span>
+	        </div>
+        </section>
+        <section>
+          <h2>Technologies</h2>
+            <br>
+            <div class="skill-tags">
+                <ul>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">Spacy</a></li>
+                    <li><a href="">Nature</a></li>
+                    <li><a href="">Spring</a></li>
+                    <li><a href="">High Noon</a></li>
+                </ul>
+		    </div>
             
-                <!--
-					<section id="menu">
-
-
-							<section>
-								<ul class="links">
-									<li>
-										<a href="#">
-											<h3>About Nanwarin</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Study Aboard Life</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Coding Sharing</h3>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<h3>Normal Life</h3>
-										</a>
-									</li>
-                                    <li>
-										<a href="#">
-											<h3>Contact Me</h3>
-										</a>
-									</li>
-								</ul>
-							</section>
-
-					</section>
-                -->
+        </section>
+        <section>
+          <h2>More details</h2>
+            <br>
+            <p>
+                <a href="projects"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </p>
+        </section>
+      </div>
+    </div>
+    <!-- Panel (Element)-->
+    <div class="dashboard-preview__panel" data-panel-id="native_forms_project">
+      <!-- Header (Element)-->
+      <div class="dashboard-preview__header">
+        <h3>Native Forms</h3>
        
-				<!-- Main -->
-                <!-- -->
-					<div id="main">
-
-						<article class="post">
-								<header>
-									<div class="title">
-										<h2>CS 570 - Homework 1</h2>
-										<p>Human Computer Interaction, Homework 1</p>
-									</div>
-									<div class="meta">
-										<time class="published" datetime="2015-11-01">April, 2017</time>
-										
-                                        <span class="name">Nanwarin C</span>
-									</div>
-								</header>
-                            
-                            <!-- 
-								<span class="image featured"><img src="images/yosemite.jpg" alt="" /></span>
-                            -->
-              
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h3>Nanwarin Chantarutai</h3>
-										</header>
-										<p>Hello !! My name is Nanwarin Chantarutai. I'm second year grad student. I'm currently working on Campus with Marketing Department at University Housing Service with a lovely team and I'm only one web developer in the team. I'm really crazy about cats, please feel free to talk with me about cats.
-										</p>
-										<ul class="actions">
-											<li><a href="Nanwarin_Resume.pdf" class="button">Resume</a></li>
-                                            <li><a href="Best_UI.pdf" class="button">Best UI</a></li>
-                                            <li><a href="Worst_UI.pdf" class="button">Worst UI</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/nanwarin_01.jpeg" alt="" /></span>
-								</div>
-				  
-                
-                          
-						
-                           
-                            
-                            <footer>
-									
-				            </footer>
-                            
-                            
-				 </article>
-
-					</div>
-
-				<!-- Footer -->
-					<section id="footer">
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/nanwarin" class="fa-linkedin-square fa-2x"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/nan2iz" class="fa-github-alt fa-2x"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.instagram.com/nan2iz/" class="fa-instagram fa-2x"><span class="label">Instagram</span></a></li>
-                            <!-- 
-							<li><a href="#" class="fa-envelope fa-2x"><span class="label">Email</span></a></li>
-                            -->
-						</ul>
-						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>
-					</section>
-
-			</div>
+      </div>
+      <!-- Content (Element)-->
+      <div class="dashboard-preview__content">
+        <section>
+          <h2>Details</h2>
+          <p>
+              Group project with 5 grad students for Machine Learning class. Developed a feature extraction function for preprocessing process in order to create a better training dataset
+          </p>
+          
+        </section>
+        <section>
+          <h2>Discussion <span>(70 unread)</span></h2>
+        </section>
+      </div>
+    </div>
+    <!-- Panel (Element)-->
+    <div class="dashboard-preview__panel" data-panel-id="bronco_planner_project">
+      <!-- Header (Element)-->
+      <div class="dashboard-preview__header">
+        <h2>Native Forms</h2>
+       
+      </div>
+      <!-- Content (Element)-->
+      <div class="dashboard-preview__content">
+        <section>
+          <h2>Details</h2>
+          <p>
+              Group project with 5 grad students for Machine Learning class. Developed a feature extraction function for preprocessing process in order to create a better training dataset
+          </p>
+          
+        </section>
+        <section>
+          <h2>Discussion <span>(70 unread)</span></h2>
+        </section>
+      </div>
+    </div>  
     
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    
+    <script src="js/index.js"></script>
+    <script src="js/slide.js"></script>
+
 </body>
-    
-
 </html>
-
