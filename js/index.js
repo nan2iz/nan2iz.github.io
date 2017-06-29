@@ -7,7 +7,7 @@
     itemId = $(this).children().attr('href');
     $('.dashboard-content__panel').hide();
     $('.dashboard-content__panel[data-panel-id=' + itemId + ']').show();
-    if (itemId === 'my_trip') {
+    if (itemId === 'projects') {
       $('.dashboard-preview').show();
     } else {
       $('.dashboard-preview').hide();

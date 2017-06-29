@@ -272,7 +272,7 @@ body {
 }
 
 .imgslide {
-  height: 20%;
+  height: 20vh !important;
   overflow: hidden;
 }
 
