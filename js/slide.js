@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var images = $('#photos img');
+	var images = $('#photos1 img');
 		var output = '<ul id="dots">';
 		for (var i = 0; i < images.length; i++) { 
 			if (i === 0) { 

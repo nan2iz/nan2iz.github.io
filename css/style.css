@@ -11,6 +11,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a{
+   color: #aaaaaa; 
+}
+
 .dashboard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,6 +307,7 @@ body {
   color: #63D9EC;
 }
 
+
 .imgslide {
   height: 20vh !important;
   overflow: hidden;
@@ -310,7 +315,7 @@ body {
 
 #photos {
   position: relative;
-  width: auto;
+  width: 70%;
   height: 100%;
   clear: both;
   margin: 0px auto;
@@ -319,6 +324,7 @@ body {
   position: absolute;
   z-index: 0;
   height: 100%;
+  width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -361,8 +367,8 @@ body {
 #prev {
   background-image: url("http://arielbeninca.com/Storage/prev.png");
   background-repeat: no-repeat;
-  width: 120px;
-  height: 120px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   z-index: 5;
   position: absolute;
