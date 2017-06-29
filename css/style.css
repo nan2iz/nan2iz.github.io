@@ -2,7 +2,7 @@
 body {
   //background: -webkit-linear-gradient(45deg, #EEEDF8, #E3D4CA);
   //background: linear-gradient(45deg, #F4EBE5, #E3D4CA);
-  //color: #C4AAEE;
+  background-color: #000;
   font-family: "Open Sans";
   font-size: 0.75rem;
   font-weight: 400;
@@ -68,6 +68,34 @@ body {
   display: none;
 
 }
+
+.about-me{
+  width: 100%;
+  height: 100%;
+}
+
+.about-me h2{
+  color: black;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  padding: 1.5rem;
+}
+
+.about-me img{
+    padding: 1.5rem;
+    max-width: 25%;
+    float: left;
+    
+}
+
+.about-me p{
+    padding: 2rem;
+    line-height: 1.5rem;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1rem;
+}
+
 .dashboard-content__panel--active {
   display: block;
 
@@ -135,6 +163,7 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
+
 .dashboard-preview {
   background: url("../imgs/bg_panel.jpg") no-repeat;
   background-size: cover;
@@ -149,23 +178,17 @@ body {
   display: block;
 }
 .dashboard-preview__header {
-  height: 30%;
-  padding: 1.6875rem 1.8125rem;
+  height: 25%;
+  padding: 2rem 2.5rem;
   color: #FFF;
 }
 .dashboard-preview__header h2 {
-  font-size: 0.875rem;
-  line-height: 1.0625rem;
+  color: black;
+  font-family: 'Gloria Hallelujah';
+  font-size: 3rem;
+  line-height: 3rem;
 }
-.dashboard-preview__header h3 {
-  font-size: 2.25rem;
-  line-height: 2.875rem;
-}
-.dashboard-preview__header h3 span {
-  font-size: 1rem;
-  line-height: 2.25rem;
-  vertical-align: top;
-}
+
 .dashboard-preview__content {
   height: 70%;
   overflow-y:scroll;
