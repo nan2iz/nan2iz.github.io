@@ -82,23 +82,32 @@ body {
   padding: 1.5rem;
 }
 
-.about-me img{
+.details-aboutme{
+    height: 40%;
+    display:block;
+}
+
+.details-aboutme img{
     padding: 1.5rem;
     max-width: 25%;
     float: left;
     
 }
 
-.about-me p{
+.details-aboutme p{
     padding: 2rem;
     line-height: 1.5rem;
     font-family: 'Coming Soon', cursive;
     font-size: 1rem;
 }
 
+.details-aboutme p a{
+    padding: 0.5rem;
+    color: #aaaaaa;
+}
 .dashboard-content__panel--active {
   display: block;
-
+  
 }
 
 .dashboard-list{
