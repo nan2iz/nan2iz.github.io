@@ -199,8 +199,8 @@ a{
 .dashboard-preview__header h2 {
   color: black;
   font-family: 'Gloria Hallelujah';
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
 }
 
 .dashboard-preview__content {
