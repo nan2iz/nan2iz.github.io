@@ -1,0 +1,42 @@
+
+
+
+.container {
+  width: 420px;
+  height: 315px;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.mySlides {
+  width: 100%;
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 48px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px black;
+}
+
+.next {
+  right: 0;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  font-size: 24px;
+}
