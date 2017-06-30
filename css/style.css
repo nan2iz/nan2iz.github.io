@@ -186,6 +186,7 @@ a{
 .dashboard-preview__panel {
   display: none;
   height: 100%;
+  widows: 100%;
 }
 .dashboard-preview__panel--active {
   display: block;
@@ -304,9 +305,6 @@ a{
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.skill-tags a:hover, .skill-tags a:focus {
-  color: #63D9EC;
-}
 
 
 .imgslide {
@@ -314,14 +312,19 @@ a{
   overflow: hidden;
 }
 
-#photos {
+.imgslide native_form{
+  height: 50vh !important;
+  overflow: hidden;
+}
+    
+.photos {
   position: relative;
   width: 70%;
   height: 100%;
   clear: both;
   margin: 0px auto;
 }
-#photos img {
+.photos img {
   position: absolute;
   z-index: 0;
   height: 100%;
@@ -331,10 +334,10 @@ a{
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-#photos img.previous {
+.photos img.previous {
   z-index: 1;
 }
-#photos img.current {
+.photos img.current {
   z-index: 2;
 }
 
@@ -427,6 +430,40 @@ div.video-wrapper {
    top: 0px;
    left: 0px;
 }
+
+div.video-wrapper-qbot {
+   z-index: 1;
+   background: rgba(0,0,0,.5);
+   position: absolute;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+}
+
+div.video-wrapper-native{
+   z-index: 1;
+   background: rgba(0,0,0,.5);
+   position: absolute;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+}
+
+div.video-wrapper-healthy-beats{
+   z-index: 1;
+   background: rgba(0,0,0,.5);
+   position: absolute;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+}
+
 
 
 ::-webkit-scrollbar {
