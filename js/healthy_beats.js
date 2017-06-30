@@ -1,18 +1,18 @@
 $(document).ready(function() {
-	var images = $('#photos img');
+	var images = $('#photos_healthy_beats img');
 		var output = '<ul id="dots">';
 		for (var i = 0; i < images.length; i++) { 
 			if (i === 0) { 
-				$('#photos img').eq(i).addClass('current 1');
+				$('#photos_healthy_beats img').eq(i).addClass('current 1');
 				output += '<li class="selected 1">';
 			} else {
-				$('#photos img').eq(i).addClass(i);
+				$('#photos_healthy_beats img').eq(i).addClass(i);
 				output += '<li class="'+[i+1]+'">';
 			}
 			output += '</li>';
 		}
 		output += '</ul>';
-		$('#photos').after(output);
+		$('#photos_healthy_beats').after(output);
 		$('#next').click(newImg);
 		$('#prev').click(newImg);
 		$('#dots li').click(selectImg);
@@ -22,8 +22,8 @@ function selectImg() {
 	$('#dots li.selected').removeClass('selected');
 var q = this.className;
 q--;
-		var oCurPhoto = $('#photos img.current');
-		var oNxtPhoto = $('#photos img').eq(q);
+		var oCurPhoto = $('#photos_healthy_beats img.current');
+		var oNxtPhoto = $('#photos_healthy_beats img').eq(q);
 $(this).addClass('selected');
 		oCurPhoto.removeClass('current').addClass('previous');
 		oNxtPhoto.css({opacity: 0.0}).addClass('current').animate({opacity: 1.0}, 1000,
@@ -34,12 +34,12 @@ $(this).addClass('selected');
 function newImg() {
 	var oChangePhoto = this.id;
 var oCurDot = $('#dots li.selected').removeClass('selected');
-		var oCurPhoto = $('#photos img.current');
+		var oCurPhoto = $('#photos_healthy_beats img.current');
 		if (oChangePhoto == 'next') {
 			var oNxtPhoto = oCurPhoto.next();
 			var oNxtDot = oCurDot.next();
 if (oNxtPhoto.length == 0) {
-				oNxtPhoto = $('#photos img:first');
+				oNxtPhoto = $('#photos_healthy_beats img:first');
 				oNxtDot = $('#dots li:first');
 			}
 
@@ -47,7 +47,7 @@ if (oNxtPhoto.length == 0) {
 var oNxtPhoto = oCurPhoto.prev();
 			var oNxtDot = oCurDot.prev();
 			if (oNxtPhoto.length == 0) {
-				oNxtPhoto = $('#photos img:last');
+				oNxtPhoto = $('#photos_healthy_beats img:last');
 				oNxtDot = $('#dots li:last');
 			}
 		};
@@ -60,11 +60,11 @@ oCurPhoto.removeClass('current').addClass('previous');
 	}
 	function moveImg(){
 		var oCurDot = $('#dots li.selected').removeClass('selected');
-		var oCurPhoto = $('#photos img.current');
+		var oCurPhoto = $('#photos_healthy_beats img.current');
 		var oNxtPhoto = oCurPhoto.next();
 		var oNxtDot = oCurDot.next();
 		if (oNxtPhoto.length == 0) {
-			oNxtPhoto = $('#photos img:first');
+			oNxtPhoto = $('#photos_healthy_beats img:first');
 			oNxtDot = $('#dots li:first');
 		}
 		oNxtDot.addClass('selected');

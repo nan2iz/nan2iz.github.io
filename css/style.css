@@ -199,8 +199,8 @@ a{
 .dashboard-preview__header h2 {
   color: black;
   font-family: 'Gloria Hallelujah';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
 }
 
 .dashboard-preview__content {
@@ -312,11 +312,11 @@ a{
   overflow: hidden;
 }
 
-.imgslide native_form{
-  height: 50vh !important;
+.imgslide.native_form{
+  height: 25vh !important;
   overflow: hidden;
 }
-    
+
 .photos {
   position: relative;
   width: 70%;
@@ -334,6 +334,12 @@ a{
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+
+#photos_native_form img{
+   width: 50%;
+}
+   
+
 .photos img.previous {
   z-index: 1;
 }
@@ -345,7 +351,7 @@ a{
   padding: 0;
   position: absolute;
   z-index: 5;
-  bottom: 0;
+  bottom: -10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
