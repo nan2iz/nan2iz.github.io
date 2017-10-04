@@ -21,6 +21,10 @@ body {
     width: 100%;
 }
 
+.name-container {
+    position: absolute;
+}
+
 .header {  
     display: table;
     width: 80%;
@@ -34,6 +38,58 @@ body {
     font-family: 'Vibur', cursive;
     font-weight: 800;
     font-size: 3em;
+}
+
+.v-text {
+    font-family: 'Vibur', cursive;
+    font-size: 60px;
+}
+
+#name {
+    position: absolute;
+    top: 5px;
+}
+
+.heart {
+    position: absolute;
+    background-color: pink;
+    top: 25px;
+    left: 168px;
+    height: 10px;
+    width: 10px;
+    transform: rotate(-45deg);
+    animation: heart-beat 1.5s linear infinite alternate;
+}
+
+
+.heart:before{
+    background-color: pink;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 5px;
+
+}
+
+.heart:after {
+    background-color: pink;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 5px;
+}
+
+@keyframes heart-beat {
+    0% {
+      transform: scale(1.5) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
 }
 
 .main-nav{
