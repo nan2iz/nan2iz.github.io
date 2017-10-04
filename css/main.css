@@ -23,11 +23,14 @@ body {
 
 .name-container {
     position: absolute;
+    display: table;
+    margin: 0 auto;
 }
 
 .header {  
     display: table;
     width: 80%;
+    height: 20%;
     margin: auto;
 }
 .nanwarin {
