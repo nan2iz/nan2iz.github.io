@@ -24,6 +24,12 @@ body{
     margin: auto;
 }
 
+.profile img{
+   height: 300px;
+   width: auto;
+   border-radius: 50%;
+}
+
 .main-section{
     display: flex;
     flex-direction: column;
@@ -54,3 +60,13 @@ Background colors
     background: -webkit-linear-gradient( #969AC6, #7BAABE);
     background: linear-gradient( #969AC6, #7BAABE);
 }
+
+/*
+Background colors
+*/
+#slide2{
+    background: -webkit-gradient(linear, top left, bottom left, from(#507c71), to(#e9e6c3));
+    background: -webkit-linear-gradient( #507c71, #e9e6c3);
+    background: linear-gradient( #507c71, #e9e6c3);
+}
+
