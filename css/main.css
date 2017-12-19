@@ -3,6 +3,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+iframe{
+    margin: 10px auto;
+    width: 70%;
+    height: 50%;
+}
+
 /*Overide the default*/
 .fp-tableCell{
     display: flex;
@@ -36,6 +42,7 @@ body{
     text-align: center;
     justify-content: center;
     height: 100%;
+    width: 80%;
 }
 
 .sub-section{
@@ -55,10 +62,16 @@ body{
 /*
 Background colors
 */
-.slide1, #section2{
+.gradient_purple, #section2{
     background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#7baabe));
     background: -webkit-linear-gradient( #969AC6, #7BAABE);
     background: linear-gradient( #969AC6, #7BAABE);
+}
+
+.gradient_purple_reverse{
+    background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#7BAABE));
+    background: -webkit-linear-gradient(  #7BAABE, #969AC6);
+    background: linear-gradient(  #7BAABE, #969AC6);
 }
 
 /*
