@@ -60,6 +60,12 @@ iframe{
 }
 
 /*
+OVERIDE DEFUALT OF SLIDES BAR
+*/
+.fp-slidesNav.bottom {
+    text-align: center;
+}
+/*
 Background colors
 */
 .gradient_purple, #section2{
