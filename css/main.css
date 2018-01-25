@@ -5,7 +5,7 @@ body{
 
 iframe{
     margin: 10px auto;
-    width: 70%;
+    width: 50%;
     height: 50%;
 }
 
@@ -93,3 +93,38 @@ Background colors
     background-color: white;
 }
 
+/*
+SLIDE SHOWS STYLE
+*/
+
+.slideshow_container{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+.slide_img{
+    height: 100%;
+}
+.slide_img img{
+    height: 100%;
+    margin: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
