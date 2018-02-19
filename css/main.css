@@ -17,6 +17,7 @@ iframe{
     align-items: center;
 }
 
+
 .header-subsection{
     width: 50%;
     text-align: center;
@@ -28,6 +29,17 @@ iframe{
 .header-subsection img{
     width: 80%;
     margin: auto;
+}
+
+@media only screen and (max-width: 730px){
+    .fp-tableCell{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-subsection{
+        width: 100%;
+        height: 50%;   
+    }
 }
 
 .profile img{
