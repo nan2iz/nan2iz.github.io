@@ -170,6 +170,8 @@ SLIDE SHOWS STYLE
     to {opacity: 1}
   }
 
+  
+
 
 @media only screen and (max-width: 730px){
 
@@ -228,4 +230,6 @@ SLIDE SHOWS STYLE
         margin: auto;
         padding: auto;
     }
+
+    
 }
